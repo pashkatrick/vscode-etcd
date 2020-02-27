@@ -1,0 +1,99 @@
+{
+    "name": "vscode-etcd",
+    "displayName": "vscode-etcd",
+    "publisher": "pashkatrick",
+    "description": "extension for VS Code",
+    "version": "1.0.0",
+    "author": {
+        "name": "pashkatrick",
+        "email": "me@pshktrck.ru"
+    },
+	"license": "MIT",
+	"icon": "img/icon.png",
+    "bugs": {
+        "url": "https://github.com/pashkatrick/vscode-etcd/issues",
+        "email": "me@pshktrck.ru"
+    },
+    "homepage": "https://github.com/pashkatrick/vscode-etcd/blob/master/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pashkatrick/vscode-etcd.git"
+    },
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:vscode-etcd.get",
+        "onCommand:vscode-etcd.update",
+        "onCommand:vscode-etcd.set-url",
+        "onCommand:vscode-etcd.set-pod"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "vscode-etcd.get",
+                "title": "Get ETCD",
+                "category": "vscode etcd"
+            },
+            {
+                "command": "vscode-etcd.update",
+                "title": "Update ETCD",
+                "category": "vscode etcd"
+            },
+            {
+                "command": "vscode-etcd.set-url",
+                "title": "Set ETCD Url",
+                "category": "vscode etcd"
+            },
+            {
+                "command": "vscode-etcd.set-pod",
+                "title": "Set ETCD Pod",
+                "category": "vscode etcd"
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "vscode ETCD",
+            "properties": {
+                "vscode.url": {
+                    "type": "string",
+                    "default": "",
+                    "scope": "resource",
+                    "description": "url for get request"
+                },
+                "vscode.pod": {
+                    "type": "string",
+                    "default": "",
+                    "scope": "resource",
+                    "description": "url for client connect"
+                }
+            }
+        }
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "test": "node ./test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/glob": "^7.1.1",
+        "@types/mocha": "^7.0.1",
+        "@types/node": "^12.11.7",
+        "@types/vscode": "^1.41.0",
+        "eslint": "^6.8.0",
+        "glob": "^7.1.6",
+        "mocha": "^7.0.1",
+        "typescript": "^3.7.5",
+        "vscode-test": "^1.3.0"
+    },
+    "dependencies": {
+        "json-find": "^2.0.7",
+        "node-etcd": "^7.0.0",
+        "request": "^2.88.2",
+        "request-promise": "^4.2.5"
+    }
+}
