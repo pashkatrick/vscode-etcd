@@ -3,13 +3,13 @@
     "displayName": "vscode-etcd",
     "publisher": "pashkatrick",
     "description": "extension for VS Code",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": {
         "name": "pashkatrick",
         "email": "me@pshktrck.ru"
     },
-	"license": "MIT",
-	"icon": "img/icon.png",
+    "license": "MIT",
+    "icon": "img/icon.png",
     "bugs": {
         "url": "https://github.com/pashkatrick/vscode-etcd/issues",
         "email": "me@pshktrck.ru"
