@@ -1,8 +1,8 @@
 {
     "name": "vscode-etcd",
-    "displayName": "vscode-etcd",
+    "displayName": "vscode ETCD",
     "publisher": "pashkatrick",
-    "description": "extension for VS Code",
+    "description": "ETCD Edit Extension for Visual Studio Code",
     "version": "1.0.1",
     "author": {
         "name": "pashkatrick",
