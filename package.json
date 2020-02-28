@@ -3,7 +3,7 @@
     "displayName": "vscode ETCD",
     "publisher": "pashkatrick",
     "description": "ETCD Edit Extension for Visual Studio Code",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": {
         "name": "pashkatrick",
         "email": "me@pshktrck.ru"
