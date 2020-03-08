@@ -1,9 +1,9 @@
 {
     "name": "vscode-etcd",
-    "displayName": "vscode ETCD",
+    "displayName": "ETCD",
     "publisher": "pashkatrick",
     "description": "ETCD Edit Extension for Visual Studio Code",
-    "version": "1.0.2",
+    "version": "2.0.1",
     "author": {
         "name": "pashkatrick",
         "email": "me@pshktrck.ru"
@@ -23,13 +23,23 @@
         "vscode": "^1.41.0"
     },
     "categories": [
-        "Other"
+        "Other",
+        "Snippets",
+        "Linters",
+        "Programming Languages"
     ],
+    "keywords": [
+        "ETCD",
+        "Http",
+        "GO",
+        "JSON tree",
+        "Editor"
+      ],
     "activationEvents": [
         "onCommand:vscode-etcd.get",
         "onCommand:vscode-etcd.update",
-        "onCommand:vscode-etcd.set-url",
-        "onCommand:vscode-etcd.set-pod"
+        "onCommand:vscode-etcd.add-url",
+        "onCommand:vscode-etcd.add-pod"
     ],
     "main": "./extension.js",
     "contributes": {
@@ -45,13 +55,13 @@
                 "category": "vscode etcd"
             },
             {
-                "command": "vscode-etcd.set-url",
-                "title": "Set ETCD Url",
+                "command": "vscode-etcd.add-url",
+                "title": "Add ETCD Url",
                 "category": "vscode etcd"
             },
             {
-                "command": "vscode-etcd.set-pod",
-                "title": "Set ETCD Pod",
+                "command": "vscode-etcd.add-pod",
+                "title": "Add ETCD Pod",
                 "category": "vscode etcd"
             }
         ],
@@ -60,13 +70,13 @@
             "title": "vscode ETCD",
             "properties": {
                 "vscode.url": {
-                    "type": "string",
+                    "type": "array",
                     "default": "",
                     "scope": "resource",
                     "description": "url for get request"
                 },
                 "vscode.pod": {
-                    "type": "string",
+                    "type": "array",
                     "default": "",
                     "scope": "resource",
                     "description": "url for client connect"

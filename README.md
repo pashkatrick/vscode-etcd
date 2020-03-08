@@ -4,8 +4,8 @@ vscode ETCD extension allows you work faster with your etcd instance in Visual S
 There are following commands:  
 - `Get ETCD` 
 - `Update ETCD` 
-- `Set ETCD Url` 
-- `Set ETCD Pod` 
+- `Add ETCD Url` 
+- `Add ETCD Pod` 
 
 Before first launch you need to set up your etcd url and pod via special commands: 
 ![here](img/podurl.png) 
