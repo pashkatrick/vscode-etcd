@@ -1,6 +1,6 @@
 ## [2.0.0]
 
-- Ability to use several addresses
+- Ability to use more etcd instances
 - New flow to get started
 - The end of updating message
 - Hanlde empty values
