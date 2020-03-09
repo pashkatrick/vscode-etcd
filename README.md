@@ -1,3 +1,7 @@
+## -- Update
+Ability to add more than one etcd instance
+![here](img/settings.gif) 
+
 # Get Started 🚀
 vscode ETCD extension allows you work faster with your etcd instance in Visual Studio Code directly.
 
@@ -14,7 +18,7 @@ Before first launch you need to set up your etcd url and pod via special command
 You can check changes after: 
 ![here](img/settings_max.png) 
 
-Now, execute the get command `Get ETCD` and enjoy😉  
+Now, execute the get command `{Get ETCD}` and enjoy😉  
 ![here](img/main-get.gif)  
 
 There is [JSON Tools](https://marketplace.visualstudio.com/items?itemName=eriklynd.json-tools) helps 
