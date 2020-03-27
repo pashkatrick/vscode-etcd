@@ -1,5 +1,5 @@
 ## -- Update
-Ability to add more than one etcd instance 
+Ability to add more than one etcd instance  
 ![here](img/settings.gif) 
 
 # Get Started 🚀
