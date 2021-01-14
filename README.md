@@ -15,8 +15,10 @@ Before first launch you need to set up your etcd url and pod via special command
 ![here](img/podurl.png) 
 ![here](img/set-pod.gif) 
 
-You can check changes after: 
+If it doesn't work, go to `settings` and set the data needed (list of production, staging, etc..):
 ![here](img/settings_max.png) 
+![here](img/data.png) 
+
 
 Now, execute the get command `{Get ETCD}` and enjoy😉  
 ![here](img/main-get.gif)  
