@@ -16,7 +16,7 @@ Before first launch you need to set up your etcd url and pod via special command
 ![here](img/set-pod.gif) 
 
 If it doesn't work, go to `settings` and set the data needed (list of production, staging, etc..):
-![here](img/settings_max.png) 
+![here](img/settings-max.png) 
 ![here](img/data.png) 
 
 
