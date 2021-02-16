@@ -110,8 +110,6 @@ function activate(context) {
 	context.subscriptions.push(command_get, command_update, command_url, command_pod);
 }
 
-exports.activate = activate;
-
 function deactivate() {}
 
 module.exports = {
